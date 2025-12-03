@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>نظام معلومات الطلبة - ملف الطالب</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;font-family: 'Segoe UI', Tahoma, Arial, Helvetica, sans-serif;background:#f2f4f7;color:#111}
+
+    header{
+      background:#40515a;color:#fff;padding:18px 20px;font-size:20px;font-weight:700;display:flex;align-items:center;justify-content:space-between
+    }
+
+    .container{max-width:920px;margin:26px auto;padding:0 16px}
+
+    .card{
+      background:#fff;border-radius:10px;box-shadow:0 6px 20px rgba(20,30,40,0.08);overflow:hidden;
+    }
+
+    .profile-top{padding:28px 32px;text-align:center}
+    .profile-top h1{font-size:26px;margin-bottom:6px}
+    .profile-top .sub{color:#7b868c;font-size:15px}
+
+    .photo-wrap{display:flex;justify-content:center;margin:20px 0}
+    .photo{
+      width:170px;height:170px;border-radius:6px;overflow:hidden;border:6px solid #fff;box-shadow:0 6px 18px rgba(10,10,10,0.08)
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .faculty{padding:16px 24px;background:#fafafa;border-top:1px solid #eee;font-weight:700}
+
+    .tabs{display:flex;border-bottom:1px solid #eee;background:#fff}
+    .tab{flex:1;padding:14px 18px;text-align:center;color:#6d7780;font-weight:600}
+    .tab.active{color:#1e88e5;border-bottom:3px solid #1e88e5}
+
+    .details{padding:20px 24px}
+    .row{display:flex;padding:18px 0;border-bottom:1px solid #f0f2f4;align-items:center}
+    .label{width:35%;color:#6b7480;font-weight:700}
+    .value{flex:1;font-size:16px}
+
+    @media (max-width:640px){
+      .label{width:40%}
+      .photo{width:140px;height:140px}
+      header{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>نظام معلومات الطلبة</div>
+    <div style="opacity:0.9">☰</div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <div class="profile-top">
+        <h1>ابراهيم بسام فهيم عمر</h1>
+        <div class="sub">بكالوريوس / عادي</div>
+
+        <div class="photo-wrap">
+          <div class="photo">
+            <img src="pic2.png" alt="الصورة">
+          </div>
+        </div>
+
+        <div class="faculty">كلية الأعمال / قسم التسويق</div>
+      </div>
+
+      <div>
+        <div class="tabs">
+          <div class="tab active">المعلومات الرئيسية</div>
+          <div class="tab">أوقات التسجيل</div>
+          <div class="tab">المعلومات المالية</div>
+        </div>
+
+        <div class="details">
+          <div class="row"><div class="label">الاسم بالعربية</div><div class="value">ابراهيم بسام فهيم عمر</div></div>
+          <div class="row"><div class="label">الاسم بالانجليزية</div><div class="value">Ibraheem Bassam Faheem</div></div>
+          <div class="row"><div class="label">الرقم الوطني</div><div class="value">2006733879</div></div>
+          <div class="row"><div class="label">الجنس</div><div class="value">ذكر</div></div>
+          <div class="row"><div class="label">الجنسية</div><div class="value">أردني</div></div>
+          <div class="row"><div class="label">مكان الولادة</div><div class="value">عمان العاصمة</div></div>
+          <div class="row"><div class="label">تاريخ الولادة</div><div class="value">30/10/2006</div></div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+</body>
+</html>
